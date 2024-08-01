@@ -1,0 +1,76 @@
+
+.page {
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    gap: 5px 5px;
+    grid-template-areas: 
+    "header-1 header-1 header-1 header-1 header-1 header-1 header-2 header-2 header-2 aside aside aside"
+    "section-aside section-aside section-aside main-1 main-1 main-1 main-1 main-1 main-1 aside aside aside"
+    "section-aside section-aside section-aside main-2 main-2 main-2 main-2 main-2 main-2 aside aside aside"
+    "footer-1 footer-1 footer-1 footer-2 footer-2 footer-2 footer-3 footer-3 footer-3 footer-4 footer-4 footer-4";
+    font-family: Arial, Helvetica, sans-serif
+}
+.job {
+    color: gray;
+}
+
+.header-1 {
+    background-color: gray;
+}
+.page > div {
+  position: relative;
+  padding: 20px;
+  background-color: #eee;
+  border-bottom: 2PX SOLID orangered;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  box-shadow:3px 3px 5px #ddd;
+}
+.page > div::after {
+    position: absolute;
+    content: "''";
+    font-size: 50px;
+    font-style: italic;
+    color: gray;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    bottom: 10px;
+}
+.header-1 {
+    grid-area: header-1;
+}
+.header-2 {
+    grid-area: header-2;
+}
+.aside {
+    grid-area: aside;
+    background-color: black !important;
+    color: white;
+}
+.section-aside {
+    grid-area: section-aside;
+}
+.main-1 {
+    grid-area: main-1;
+    background-color: black !important;
+    color: white;
+}
+.main-2 {
+    grid-area: main-2;
+}
+.footer-1{
+    grid-area: footer-1;
+}
+.footer-2{
+    grid-area: footer-2;
+    background-color: black !important;
+    color: white;
+}
+.footer-3{
+    grid-area: footer-3;
+}
+.footer-4{
+    grid-area: footer-4;
+}
